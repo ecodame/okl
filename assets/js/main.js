@@ -93,10 +93,12 @@ function appliquederoulement4(){
 }
 
 function openfrorm(){
+    document.querySelector('.show-service2').classList.toggle('clause-frorm2')
     document.querySelector('.show-service').classList.toggle('open-frorm')
 }
 
 function openfrorm2(){
+    document.querySelector('.show-service').classList.toggle('clause-frorm')
     document.querySelector('.show-service2').classList.toggle('open-frorm2')
 }
 
@@ -130,13 +132,13 @@ function sentmsg(){
 
 function sentmsg2(){
     var phonnumbser = "+237657073440";
-    var name_service  = document.querySelector('.nomservice').value;
-    var type_service  = document.querySelector('.typeservice').value;
-    var pays  = document.querySelector('.pays').value;
+    var name_service  = document.querySelector('.nomservice2').value;
+    var type_service  = document.querySelector('.typeservice2').value;
+    var pays  = document.querySelector('.pays2').value;
     var salary  = document.querySelector('.salary').value;
-    var name  = document.querySelector('.name').value;
-    var phone  = document.querySelector('.phone').value;
-    var description  = document.querySelector('.description').value;
+    var name  = document.querySelector('.name2').value;
+    var phone  = document.querySelector('.phone2').value;
+    var description  = document.querySelector('.description2').value;
 
     var url = "https://wa.me/" + phonnumbser + "?text=" 
     +"*NAME-SERVICE :* " +name_service+"%0a"

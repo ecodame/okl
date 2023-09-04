@@ -640,7 +640,6 @@ body{
   }
 
   #contenue2{
-    background: #1389eb;
     color: rgb(126, 58, 58);
   }
 
@@ -722,6 +721,11 @@ body{
   transform: scale(1);
   display: block;
 }
+
+.show-service2.clause-frorm2{
+  display: none;
+}
+
 
 
 form{
