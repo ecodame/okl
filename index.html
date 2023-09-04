@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>boncion</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="tabs">
+                <a href="#" class="nav__logo">boncoin</a>
+
+                <div class="list" id="nav-menu">
+                    <ul class="nav__list">
+
+                        <li class="tab"  data-target="#contenue1">
+                            <a href="assets/html/setting.html" class="nav__link ">
+                                <i class='bx bxs-cog nav__icon'></i>
+                                <span class="nav__name">settings</span>
+                            </a>
+                        </li>
+
+                        <li class="tab"  data-target="#contenue2">
+                            <a href="#contactme" class="nav__link">
+                                <i class='bx bxs-server   nav__icon'></i>
+                                <span class="nav__name">server</span>
+                            </a>
+                        </li>
+
+                        <li class="tab active"  data-target="#contenue3">
+                            <a href="#home" class="nav__link">
+                                <i class='bx bxs-home nav__icon'></i>
+                                <span class="nav__name ">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="tab"  data-target="#contenue4">
+                            <a href="#skills" class="nav__link">
+                                <i class='bx bxs-hard-hat nav__icon'></i>
+                                <span class="nav__name">service</span>
+                            </a>
+                        </li>
+
+                        <li class="tab"  data-target="#contenue5">
+                            <a href="#about" class="nav__link">
+                                <i class='bx bxs-user nav__icon'></i>
+                                <span class="nav__name">About</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+               <div>
+                <img src="bg-image/icon logo.png" alt="" class="nav__img">
+               </div>
+            </nav>
+        </header>
+
+        <main>
+            <!--=============== HOME ===============-->
+            <!-- <section class="container section section__height" id="home">
+                <h2 class="section__title">Home</h2>
+            </section> -->
+
+            <!--=============== ABOUT ===============-->
+            <!-- <section class="container section section__height" id="about">
+                <h2 class="section__title">About</h2>
+            </section> -->
+
+            <!--=============== SKILLS ===============-->
+            <!-- <section class="container section section__height" id="skills">
+                <h2 class="section__title">Skills</h2>
+            </section> -->
+
+            <!--=============== PORTFOLIO ===============-->
+            <!-- <section class="container section section__height" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+            </section> -->
+
+            <!--=============== CONTACTME ===============-->
+            <!-- <section class="container section section__height" id="contactme">
+                <h2 class="section__title">Contactme</h2>
+            </section> -->
+            <div class="contenues" >
+                <div id="contenue2" class="contenue">
+                    <h2>post a service or job offer</h2>
+                    <hr>
+                    <div class="emplio mod ajj">
+                        <div class="poster-un-service">
+                            <button onclick="openfrorm()"><a href="#">post a service</a></button>
+                        </div>
+                        <div class="trouver-un-enploi ">
+                            <button onclick="openfrorm2()"><a href="#">post a job offer</a></button>
+                        </div>
+                    </div>
+                    <div class="show-service">
+                        <h3>fill in information about the service</h3>
+                        <form action="">
+                            <label for="">name service</label><br>
+                            <input type="text" class="nomservice" placeholder="menagere" required><br>
+                            <label for="">type of service</label><br>
+                            <input type="text" class="typeservice" placeholder="short term service" required><br>
+                            <label for="">country/city</label><br>
+                            <input type="text" class="pays" placeholder="cameroun/douala" required><br>
+                            <label for="">your name</label><br>
+                            <input type="text" class="name" placeholder="patrick" required><br>
+                            <label for="">phone</label><br>
+                            <input type="text" class="phone" placeholder="+23765390......" required><br>
+                            <label for="">description service</label><br>
+                           <textarea name="" class="description" id="" placeholder="je donne des repetition a domicile aux eleves de classe de 6em jusqu'1 terminal dans les matieres infos , physique ,maths , chimie taux de reuissite des 5 derniere annees74%,66%,97%,31%,82%" cols="40" rows="6"></textarea>
+                            <input type="button" class="sennt" onclick="sentmsg()" value="sent to whatsapp" >
+                        </form>
+                    </div>
+
+                    <div class="show-service2">
+                        <h3>fill in information about the  job offer</h3>
+                        <form action="">
+                            <label for="">name service</label><br>
+                            <input type="text" class="nomservice" placeholder="menagere" required><br>
+                            <label for="">salary</label><br>
+                            <input type="number" class="salary" placeholder="35.000 fcfa" required><br>
+                            <label for="">country/city</label><br>
+                            <input type="text" class="pays" placeholder="cameroun/douala" required><br>
+                            <label for="">your name</label><br>
+                            <input type="text" class="name" placeholder="patrick" required><br>
+                            <label for="">phone</label><br>
+                            <input type="text" class="phone" placeholder="+23765390......" required><br>
+                            <label for="">description service</label><br>
+                           <textarea name="" class="description" id="" placeholder="je donne des repetition a domicile aux eleves de classe de 6em jusqu'1 terminal dans les matieres infos , physique ,maths , chimie taux de reuissite des 5 derniere annees74%,66%,97%,31%,82%" cols="40" rows="6"></textarea>
+                            <input type="button" class="sennt" onclick="sentmsg2()" value="sent to whatsapp" >
+                        </form>
+                    </div>
+                    <hr>
+                   
+                </div>
+                <div id="contenue3" class="contenue">
+                    <!-- ===================edite home =================== -->
+
+                    
+                    <div class="emplio">
+                        <div class="poster-un-service">
+                            <button><a href="#">post a service</a></button>
+                        </div>
+                        <div class="trouver-un-enploi">
+                            <button><a href="#">find a job</a></button>
+                        </div>
+                    </div>
+                    <!-- <div class="description-app">
+                        <p><span>boncoin</span> is an startup  that helps find money and offer these services</p>
+                    </div> -->
+
+                    <div class="task" draggable="true">
+                        <div class="tags">
+                          <span class="tag">welcome</span>
+                          <button class="options">
+                            <i class='bx bxl-wordpress'></i>                          </button>
+                        </div>
+                        <p><span>boncoin</span> is an startup  that helps find money and offer these services</p>
+                        <div class="stats">
+                          <!-- <div>
+                            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path stroke-linecap="round" stroke-width="2" d="M12 8V12L15 15"></path> <circle stroke-width="2" r="9" cy="12" cx="12"></circle> </g></svg>mars 10</div>
+                            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" d="M16 10H16.01M12 10H12.01M8 10H8.01M3 10C3 4.64706 5.11765 3 12 3C18.8824 3 21 4.64706 21 10C21 15.3529 18.8824 17 12 17C11.6592 17 11.3301 16.996 11.0124 16.9876L7 21V16.4939C4.0328 15.6692 3 13.7383 3 10Z"></path> </g></svg>18</div>
+                            <div><svg fill="#000000" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-2.5 0 32 32"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <g id="icomoon-ignore"> </g> <path fill="#000000" d="M0 10.284l0.505 0.36c0.089 0.064 0.92 0.621 2.604 0.621 0.27 0 0.55-0.015 0.836-0.044 3.752 4.346 6.411 7.472 7.060 8.299-1.227 2.735-1.42 5.808-0.537 8.686l0.256 0.834 7.63-7.631 8.309 8.309 0.742-0.742-8.309-8.309 7.631-7.631-0.834-0.255c-2.829-0.868-5.986-0.672-8.686 0.537-0.825-0.648-3.942-3.3-8.28-7.044 0.11-0.669 0.23-2.183-0.575-3.441l-0.352-0.549-8.001 8.001zM1.729 10.039l6.032-6.033c0.385 1.122 0.090 2.319 0.086 2.334l-0.080 0.314 0.245 0.214c7.409 6.398 8.631 7.39 8.992 7.546l-0.002 0.006 0.195 0.058 0.185-0.087c2.257-1.079 4.903-1.378 7.343-0.836l-13.482 13.481c-0.55-2.47-0.262-5.045 0.837-7.342l0.104-0.218-0.098-0.221-0.031 0.013c-0.322-0.632-1.831-2.38-7.498-8.944l-0.185-0.215-0.282 0.038c-0.338 0.045-0.668 0.069-0.981 0.069-0.595 0-1.053-0.083-1.38-0.176z"> </path> </g></svg>7</div>
+                          </div> -->
+                          <div class="viewer">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path stroke-width="2" stroke="#ffffff" d="M17 8C17 10.7614 14.7614 13 12 13C9.23858 13 7 10.7614 7 8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8Z"></path> <path stroke-linecap="round" stroke-width="2" stroke="#ffffff" d="M3 21C3.95728 17.9237 6.41998 17 12 17C17.58 17 20.0427 17.9237 21 21"></path> </g></svg></span>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path stroke-width="2" stroke="#ffffff" d="M17 8C17 10.7614 14.7614 13 12 13C9.23858 13 7 10.7614 7 8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8Z"></path> <path stroke-linecap="round" stroke-width="2" stroke="#ffffff" d="M3 21C3.95728 17.9237 6.41998 17 12 17C17.58 17 20.0427 17.9237 21 21"></path> </g></svg></span>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path stroke-width="2" stroke="#ffffff" d="M17 8C17 10.7614 14.7614 13 12 13C9.23858 13 7 10.7614 7 8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8Z"></path> <path stroke-linecap="round" stroke-width="2" stroke="#ffffff" d="M3 21C3.95728 17.9237 6.41998 17 12 17C17.58 17 20.0427 17.9237 21 21"></path> </g></svg></span>
+                            <span>+99</span>
+                        </div>
+                        </div>
+                        
+                      </div>
+                      
+                    <!-- =============== barre de recherche=============== -->
+                        <div class="search">
+                            <input placeholder="Search..." type="text">
+                            <button type="submit">Go</button>
+                        </div>
+
+                      <div class="cards">
+                        <div class="ca">
+                            <div class="card">
+                                <div class="image-card">
+                                    <img src="bg-image/managere.jfif" alt="" srcset="">
+                                </div>
+                                <div class="infos">
+                                    <h3>menagere</h3>
+                                    <span><p>short term service</p></span>
+                                    <div class="infos-ca">
+                                        <img src="bg-image/cmr.jfif" alt="">
+                                       <span class="localisation">CMR/kribi <br>01 dec 2016.<i class='bx bx-shape-polygon'></i> </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="acces">
+                                        <i onclick="appliquederoulement4()" class='bx bx-plus plus4'></i>
+                                        <i  onclick="appliquederoulement4()" class='bx bx-minus minus4'></i>
+                                    </div>
+                                    <div class="add">
+                                        <p>+43</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deroulement4">
+                                <div class="flex">
+                                    <span>KLORANE CLEARE </span>
+                                    <samp>decription</samp>
+                                </div>
+                                <p>besion d'une menagere dans la ville de <span class="matiere">kribi </span>? je suis la  <span class="matiere"></span> </p>
+                                <a href="https://wa.me/+237657072440"><input type="button"  disabled value="call me" ></a> 
+                            </div>
+                        </div>
+                            <div class="ca">
+                                <div class="card">
+                                    <div class="image-card">
+                                        <img src="bg-image/avatar.jfif" alt="" srcset="">
+                                    </div>
+                                    <div class="infos">
+                                        <h3>web developers</h3>
+                                        <span><p>short term service</p></span>
+                                        <div class="infos-ca">
+                                            <img src="bg-image/cmr.jfif" alt="">
+                                           <span class="localisation">CMR/douala <br>25 dec 2022.<i class='bx bx-shape-polygon'></i> </span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="acces">
+                                            <i onclick="appliquederoulement()" class='bx bx-plus plus'></i>
+                                            <i  onclick="appliquederoulement()" class='bx bx-minus minus'></i>
+                                        </div>
+                                        <div class="add">
+                                            <p>+63</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="deroulement">
+                                    <div class="flex">
+                                        <span>MOTIA </span>
+                                        <samp>decription</samp>
+                                    </div>
+                                    <p>si vous aviez besion d'un site web statique n'hesitez pas a me contacter je vous cree un site web <span class="matiere">a moindre cout</span> </p>
+                                    <a href="#"><input type="button"  disabled value="call me" ></a> 
+                                </div>
+                            </div>
+
+                            <div class="ca">
+                                <div class="card">
+                                    <div class="image-card">
+                                        <img src="bg-image/repetition.jfif" alt="" srcset="">
+                                    </div>
+                                    <div class="infos">
+                                        <h3>repetition</h3>
+                                        <span><p>long term service</p></span>
+                                        <div class="infos-ca">
+                                            <img src="bg-image/cote divoir.jfif" alt="">
+                                           <span class="localisation">CDV/abijan <br>17 avrl 2019.<i class='bx bx-shape-polygon'></i> </span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="acces">
+                                            <i onclick="appliquederoulement2()" class='bx bx-plus plus2'></i>
+                                            <i  onclick="appliquederoulement2()" class='bx bx-minus minus2'></i>
+                                        </div>
+                                        <div class="add">
+                                            <p>+100</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="deroulement2">
+                                    <div class="flex">
+                                        <span>professeur HERIC NSANGOU</span>
+                                        <samp>decription</samp>
+                                    </div>
+                                    <p>je donne des repetition a domicile aux eleves de classe de 6em jusqu'1 terminal dans les matieres <span class="matiere">infos , physique ,maths , chimie</span> taux de reuissite des 5 derniere annees <span class="matiere">74%,66%,97%,31%,82%</span> </p>
+                                    <a href="#"><input type="button"  disabled value="call me" ></a> 
+                                </div>
+                            </div>
+
+                            <div class="ca">
+                                <div class="card">
+                                    <div class="image-card">
+                                        <img src="bg-image/agriculteur.jfif" alt="" srcset="">
+                                    </div>
+                                    <div class="infos">
+                                        <h3>aide au champ</h3>
+                                        <span><p>long term service</p></span>
+                                        <div class="infos-ca">
+                                            <img src="bg-image/cmr.jfif" alt="">
+                                           <span class="localisation">CMR/douala <br>09 dec 2023.<i class='bx bx-shape-polygon'></i> </span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="acces">
+                                            <i onclick="appliquederoulement3()" class='bx bx-plus plus3'></i>
+                                            <i  onclick="appliquederoulement3()" class='bx bx-minus minus3'></i>
+                                        </div>
+                                        <div class="add">
+                                            <p>+12</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="deroulement3">
+                                    <div class="flex">
+                                        <span>FRANCK LOIC</span>
+                                        <samp>decription</samp>
+                                    </div>
+                                    <p>si vous aviez un champ et vous aviez besions d'un MPAMBE-MAN contactez-moi je travaile de <samp class="matiere">07h</samp> jusqu'a <samp class="matiere">14h-15h</samp></p>
+                                    <a href="#"><input type="button"  disabled value="call me" ></a> 
+                                </div>
+                            </div>
+                            
+                    
+                </div>
+                <div id="contenue1" class="contenue">
+                    <h2>setting </h2>
+                    <div class="loader">
+                    </div>
+                    
+                </div>
+                <div id="contenue4" class="contenue">
+                    <h2>page 4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, necessitatibus?</p>
+                </div>
+                <div id="contenue5" class="contenue">
+                    <h2>page 5</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, necessitatibus?</p>
+                </div>
+            </div>
+
+        </main>
+        
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
